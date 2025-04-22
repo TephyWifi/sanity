@@ -19,8 +19,20 @@ const packingList = {
           {
             type: 'object',
             fields: [
-              { name: 'label', type: 'string', title: 'Item' },
-              { name: 'essential', type: 'boolean', title: 'Essential' },
+              { name: 'label', title: 'Item', type: 'string' },
+              { name: 'essential', title: 'Essential', type: 'boolean' },
+              { name: 'category', title: 'Category', type: 'string',
+                options: {
+                  list: [
+                    {title: 'Clothing', value: 'Clothing'},
+                    {title: 'Toiletries', value: 'Toiletries'},
+                    {title: 'Tech', value: 'Tech'},
+                    {title: 'Medicine', value: 'Medicine'},
+                    {title: 'Important', value: 'Important'},
+                    {title: 'Others', value: 'Others'},
+                  ]
+                }
+               }
             ],
           },
         ],
