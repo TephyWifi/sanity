@@ -20,6 +20,7 @@ const packingList = {
             type: 'object',
             fields: [
               { name: 'label', title: 'Item', type: 'string' },
+              { name: 'number', title: 'Amount', type: 'number'},
               { name: 'essential', title: 'Essential', type: 'boolean' },
               { name: 'category', title: 'Category', type: 'string',
                 options: {
